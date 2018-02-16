@@ -1,3 +1,8 @@
+**NOTE:**  
+__Emmu is a wip - this is clearl based off the great work of seneca. We needed to itterate seneca faster then whats currently being done. Hopefully momentum around seneca will continue to grow and we can realign. Until then, we will be pushing our iterations here.__
+
+**TODO** - update readme
+
 ![Logo][]
 > A Node.js toolkit for Microservice architectures
 
@@ -8,8 +13,7 @@
 [![Coveralls][BadgeCoveralls]][Coveralls]
 [![Gitter][BadgeGitter]][Gitter]
 
-- __Lead Maintainer:__ [Richard Rodger][Lead]
-- __Sponsor:__ [metsitaba][Sponsor]
+- __Lead Maintainer:__ [Michael Lindenau][Lead]
 - __Node:__ 4.x, 6.x, 8.x
 
 Seneca is a toolkit for writing microservices and organizing the
