@@ -1,5 +1,5 @@
 **NOTE:**  
-__Emmu is a wip - this is clearl based off the great work of seneca. We needed to itterate seneca faster then whats currently being done. Hopefully momentum around seneca will continue to grow and we can realign. Until then, we will be pushing our iterations here.__
+__Emmu is a wip - this is clearly based off the great work of seneca. We needed to iterate seneca faster then whats currently being done. Hopefully momentum around seneca will continue to grow and we can realign. Until then, we will be pushing our iterations here.__
 
 **TODO** - update readme
 
