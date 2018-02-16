@@ -2,6 +2,7 @@
 
 * Depricated native transport support
 * Removed support for plugins being definied in start options
+* Remove file path string option in init call
 
 ## 1.0.0 2018-02-16
 

@@ -239,18 +239,15 @@ function Seneca() {
 Util.inherits(Seneca, Events.EventEmitter)
 
 // Create a Seneca instance.
-module.exports = function init(seneca_options, more_options) {
-  var initial_options = _.isString(seneca_options)
-    ? _.extend({}, { from: seneca_options }, more_options)
-    : _.extend({}, seneca_options, more_options)
-
-  var seneca = make_seneca(initial_options)
+module.exports = function init(seneca_options) {
+  var seneca = make_seneca(seneca_options)
   var options = seneca.options()
 
   // The 'internal' key of options is reserved for objects and functions
   // that provide functionality, and are thus not really printable
   seneca.log.debug({ kind: 'notice', options: _.omit(options, ['internal']) })
 
+  // Prints options if `options.debug.print.options`
   Print.print_options(seneca, options)
 
   seneca.ready(function() {
@@ -261,12 +258,12 @@ module.exports = function init(seneca_options, more_options) {
 }
 
 // Expose Seneca prototype for easier monkey-patching
-module.exports.Seneca = Seneca
+module.exports.Emmu = Seneca
 
 // To reference builtin loggers when defining logging options.
 module.exports.loghandler = Legacy.loghandler
 
-// Makes require('seneca').use(...) work by creating an on-the-fly instance.
+// Makes require('emmu').use(...) work by creating an on-the-fly instance.
 module.exports.use = function top_use() {
   var argsarr = new Array(arguments.length)
   for (var l = 0; l < argsarr.length; ++l) {
@@ -278,7 +275,7 @@ module.exports.use = function top_use() {
   return instance.use.apply(instance, argsarr)
 }
 
-// Makes require('seneca').test() work.
+// Makes require('emmu').test() work.
 module.exports.test = function top_test() {
   return module.exports().test(arguments[0], arguments[1])
 }
