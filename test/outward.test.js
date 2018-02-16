@@ -1,4 +1,4 @@
-/* Copyright (c) 2016-2017 Richard Rodger, MIT License */
+/* Copyright (c) 2016-2017 Michael Lindenau, MIT License */
 'use strict'
 
 var Util = require('util')

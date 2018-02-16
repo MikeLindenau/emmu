@@ -1,4 +1,4 @@
-/* Copyright (c) 2010-2014 Richard Rodger, MIT License */
+/* Copyright (c) 2010-2014 Michael Lindenau, MIT License */
 'use strict'
 
 var Connect = require('connect')

@@ -1,4 +1,4 @@
-/* Copyright (c) 2010-2015 Richard Rodger, MIT License */
+/* Copyright (c) 2010-2015 Michael Lindenau, MIT License */
 'use strict'
 
 var Code = require('code')

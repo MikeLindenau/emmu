@@ -386,7 +386,7 @@ npm run coverage; open docs/coverage.html
 
 
 ## License
-Copyright (c) 2015-2016 Richard Rodger and other contributors;
+Copyright (c) 2015-2016 Michael Lindenau and other contributors;
 Licensed under __[MIT][Lic]__.
 
 

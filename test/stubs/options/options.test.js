@@ -1,4 +1,4 @@
-/* Copyright (c) 2013-2015 Richard Rodger */
+/* Copyright (c) 2013-2015 Michael Lindenau */
 'use strict'
 
 var Assert = require('assert')

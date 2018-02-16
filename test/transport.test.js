@@ -1,4 +1,4 @@
-/* Copyright (c) 2014-2016 Richard Rodger, MIT License */
+/* Copyright (c) 2014-2016 Michael Lindenau, MIT License */
 'use strict'
 
 var _ = require('lodash')

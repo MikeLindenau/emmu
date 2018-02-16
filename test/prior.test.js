@@ -1,4 +1,4 @@
-/* Copyright (c) 2015 Richard Rodger, Contributors */
+/* Copyright (c) 2015 Michael Lindenau, Contributors */
 'use strict'
 
 var _ = require('lodash')
