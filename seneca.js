@@ -253,11 +253,6 @@ module.exports = function init(seneca_options, more_options) {
 
   Print.print_options(seneca, options)
 
-  // Register plugins specified in options.
-  _.each(options.plugins, function(plugindesc) {
-    seneca.use(plugindesc)
-  })
-
   seneca.ready(function() {
     this.log.info({ kind: 'notice', notice: 'hello seneca ' + seneca.id })
   })
