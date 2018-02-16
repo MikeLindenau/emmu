@@ -1,9 +1,9 @@
 {
-  "name": "seneca",
-  "description": "A Microservices Framework for Node.js",
-  "version": "3.4.3",
+  "name": "emmu",
+  "description": "A Microservices Framework for Node.js based on senecajs",
+  "version": "1.0.0",
   "license": "MIT",
-  "homepage": "http://senecajs.org",
+  "homepage": "http://emmu.org",
   "keywords": [
     "micro",
     "service",
@@ -21,7 +21,7 @@
     "toolkit",
     "startup"
   ],
-  "author": "Richard Rodger (http://richardrodger.com/)",
+  "author": "Michael lindenau (https://github.com/MikeLindenau)",
   "contributors": [
     "Adrien Becchis (https://github.com/AdrieanKhisbe)",
     "Alexandru Mircea (https://github.com/mirceaalexandru)",
@@ -55,7 +55,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/senecajs/seneca.git"
+    "url": "https://github.com/MikeLindenau/emmu"
   },
   "files": [
     "LICENSE",
