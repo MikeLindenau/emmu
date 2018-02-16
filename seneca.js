@@ -235,6 +235,7 @@ function Seneca() {
   Events.EventEmitter.call(this)
   this.setMaxListeners(0)
 }
+
 Util.inherits(Seneca, Events.EventEmitter)
 
 // Create a Seneca instance.
@@ -251,11 +252,6 @@ module.exports = function init(seneca_options, more_options) {
   seneca.log.debug({ kind: 'notice', options: _.omit(options, ['internal']) })
 
   Print.print_options(seneca, options)
-
-  // Register default plugins, unless turned off by options.
-  if (options.legacy.transport && options.default_plugins.transport) {
-    seneca.use(require('seneca-transport'))
-  }
 
   // Register plugins specified in options.
   _.each(options.plugins, function(plugindesc) {

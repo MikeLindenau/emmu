@@ -1,4 +1,7 @@
+## 2.0.0 2018-02-16
 
+* Depricated native transport support
+* Removed support for plugins being definied in start options
 
 ## 1.0.0 2018-02-16
 
