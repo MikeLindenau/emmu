@@ -1,3 +1,9 @@
+
+
+## 1.0.0 2018-02-16
+
+* Clean fork of seneca
+
 ## 3.4.3 2017-10-13
 
 * Supports --seneca.test to trigger test mode
