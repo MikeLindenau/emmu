@@ -1,7 +1,7 @@
 {
   "name": "emmu",
-  "description": "A Microservices Framework for Node.js based on senecajs",
-  "version": "1.0.0",
+  "description": "A Microservices Framework for Node.js",
+  "version": "0.1.0",
   "license": "MIT",
   "homepage": "http://emmu.org",
   "keywords": [
@@ -23,35 +23,6 @@
   ],
   "author": "Michael lindenau (https://github.com/MikeLindenau)",
   "contributors": [
-    "Adrien Becchis (https://github.com/AdrieanKhisbe)",
-    "Alexandru Mircea (https://github.com/mirceaalexandru)",
-    "Adrian Rossouw (http://daemon.co.za)",
-    "Colin Ihrig (https://github.com/cjihrig)",
-    "Cristian Ianto (https://github.com/iantocristian)",
-    "Cristian Kiss (https://github.com/ckiss)",
-    "David Mark Clements (https://github.com/davidmarkclements)",
-    "Dean McDonnell (https://github.com/mcdonnelldean)",
-    "Dominic Tarr (https://github.com/dominictarr)",
-    "Dustin Deus (https://github.com/StarpTech)",
-    "Glen Keane (https://github.com/thekemkid)",
-    "Gege Pincin (https://github.com/Georgette)",
-    "Jake Pruitt (https://github.com/jakepruitt)",
-    "Maciej Małecki (http://mmalecki.com)",
-    "Matteo Collina (https://github.com/mcollina)",
-    "Marian Radulescu (https://github.com/marianr)",
-    "Marius Ursache (https://github.com/bamse16)",
-    "Martin Betak (https://github.com/matobet)",
-    "Maxence Dalmais (https://github.com/maxired)",
-    "Mihai Dima (https://github.com/mihaidma)",
-    "Naomi Feehan (https://github.com/naomifeehan)",
-    "Paolo Chiodi (https://github.com/paolochiodi)",
-    "Peter Elger (https://github.com/pelger)",
-    "Reto Inderbitzin (https://github.com/indr)",
-    "Reid Rankin (https://github.com/reidrankin)",
-    "Tane Piper (https://github.com/tanepiper)",
-    "Wyatt Preul (https://github.com/geek)",
-    "Vald Houbiev (https://github.com/vladgolubev)",
-    "Vito Tardia (https://github.com/vtardia)"
   ],
   "repository": {
     "type": "git",
@@ -61,15 +32,14 @@
     "LICENSE",
     "README.md",
     "CHANGES.md",
-    "lib",
-    "seneca.js"
+    "lib"
   ],
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=8.0.0"
   },
   "main": "seneca.js",
   "scripts": {
-    "test": "lab -v -P test -L -t 85",
+    "test": "lab -v -P test -t 85",
     "coveralls": "lab -s -P test -r lcov | coveralls",
     "coverage": "lab -v -P test -L -t 85 -r html > docs/coverage.html",
     "annotate": "docco seneca.js lib/*.js -o docs/annotated",
@@ -79,6 +49,7 @@
   "dependencies": {
     "archy": "1.0.0",
     "eraro": "0.4.1",
+    "eventemitter3": "^3.1.0",
     "gate-executor": "1.1.1",
     "gex": "0.2.2",
     "json-stringify-safe": "5.0.1",
@@ -88,7 +59,7 @@
     "nid": "0.3.2",
     "norma": "0.3.0",
     "ordu": "0.1.1",
-    "patrun": "0.5.1",
+    "patrun": "^0.5.1",
     "qs": "6.4.0",
     "rolling-stats": "0.1.1",
     "semver": "5.3.0",
@@ -107,7 +78,7 @@
     "coveralls": "2.13.x",
     "docco": "0.7.x",
     "hoek": "4.1.x",
-    "lab": "14.0.x",
+    "lab": "^14.0.1",
     "prettier": "1.4.x",
     "seneca-entity": "2.0.x",
     "seneca-error-test": "0.2.x"

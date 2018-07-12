@@ -263,18 +263,6 @@ module.exports.Emmu = Seneca
 // To reference builtin loggers when defining logging options.
 module.exports.loghandler = Legacy.loghandler
 
-// Makes require('emmu').use(...) work by creating an on-the-fly instance.
-module.exports.use = function top_use() {
-  var argsarr = new Array(arguments.length)
-  for (var l = 0; l < argsarr.length; ++l) {
-    argsarr[l] = arguments[l]
-  }
-
-  var instance = module.exports()
-
-  return instance.use.apply(instance, argsarr)
-}
-
 // Makes require('emmu').test() work.
 module.exports.test = function top_test() {
   return module.exports().test(arguments[0], arguments[1])
