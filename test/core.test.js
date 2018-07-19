@@ -2,8 +2,8 @@ const { expect, fail } = require('code');
 const Lab = require('lab');
 const { after, before, describe, it } = exports.lab = Lab.script();
 
-const Emmu = require('../lib')
-const service = Emmu.spawn()
+const Emu = require('../lib')
+const service = Emu.spawn()
 
 async function init() {
   service.add({a:1}, (msg) => {
