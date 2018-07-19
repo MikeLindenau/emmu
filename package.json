@@ -1,7 +1,7 @@
 {
-  "name": "emmu",
+  "name": "node_emu",
   "description": "A Microservices Framework for Node.js",
-  "version": "0.1.0",
+  "version": "0.1.0-rc",
   "license": "MIT",
   "homepage": "http://emmu.org",
   "keywords": [
